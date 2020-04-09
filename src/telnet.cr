@@ -167,6 +167,8 @@ class Telnet
             # respond to "IAC WON'T x"
             @suppress_go_ahead = false if request_byte == OPT_SGA
             @write.call(Bytes[IAC, DONT, request_byte])
+          else
+            # ignore this byte
           end
         when AYT
           # respond to "IAC AYT" (are you there)
