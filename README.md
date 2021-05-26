@@ -1,7 +1,6 @@
 # Telnet
 
-[![Build Status](https://travis-ci.org/spider-gazelle/telnet.cr.svg?branch=master)](https://travis-ci.org/spider-gazelle/telnet.cr)
-
+[![CI](https://github.com/spider-gazelle/telnet.cr/actions/workflows/ci.yml/badge.svg)](https://github.com/spider-gazelle/telnet.cr/actions/workflows/ci.yml)
 
 Telnet protocol support for Crystal Lang. Does not implement transport, just the raw protocol.
 
