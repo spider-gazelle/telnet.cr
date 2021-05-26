@@ -108,6 +108,7 @@ class Telnet
   #	Bytes[1, 55, 2, 155, 3, 255, 255, 4, 40, 255, 255, 30, 20]
   # ... to this:
   #	Bytes[1, 55, 2, 155, 3, 255, 4, 40, 255, 30, 20]
+  # ameba:disable Metrics/CyclomaticComplexity
   def buffer(data) : Bytes
     outp = IO::Memory.new
     inp = IO::Memory.new(@buffer.size + data.size)
